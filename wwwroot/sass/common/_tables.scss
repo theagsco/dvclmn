@@ -1,0 +1,57 @@
+
+table {
+	width:100%;
+	// border-collapse:collapse;
+	margin-bottom:1em;
+	overflow: hidden;
+}
+thead {
+	background:$nearlyWhite;
+}
+th {
+	padding:10px 6px;
+	vertical-align:middle;
+	text-align:left;
+	font-family: $robomono;
+	color:$greyLight;
+	font-size: 0.9em;
+	text-transform: uppercase;
+
+	a:link {
+		color:$greyLight;
+		&:hover {color:black;}
+	}
+}
+.floated {
+	// height:35px;
+	// @include rounded();
+	// @include box-shadow(0, 3px, 14px, 0, transparentize(black, 0.9));
+	thead {
+	}
+	th {
+		border-bottom:4px solid $offWhite;
+	}
+}
+td {
+	padding:.5em;
+	text-align:left;
+	vertical-align:middle;
+	text-align:left;
+}
+tr:nth-child(odd) td {
+     background-color:$nearlyWhite;
+}
+table.objects {
+	tr:nth-child(odd) td {
+	  background-color:transparent;
+	}
+	border:0;
+}
+
+tr {
+	margin-top:1px;
+	// margin-bottom:1px;
+}
+tfoot td {
+	text-align:center;
+}
