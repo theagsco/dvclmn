@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Wentworth';
+  src: url('../fonts/WentworthBeta-TextRegular.woff2') format('woff2'),
+       url('../fonts/WentworthBeta-TextRegular.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Wentworth';
+  src: url('../fonts/WentworthBeta-TextBold.woff2') format('woff2'),
+       url('../fonts/WentworthBeta-TextBold.woff') format('woff');
+       font-weight: 500;
+       font-style: normal;
+}
+strong {
+  font-weight: bold;
+  font-weight: 700;
+}
+em {
+  font-style: italic;
+}
+body, input, select {
+  font-family: 'Wentworth', serif;
+  font-size: 1em;
+}
+input {
+	font-size:100%;
+}
+button {
+  font-family:"Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'franklin-gothic-urw', sans-serif;
+	font-weight:700;
+}
+
+h1 {
+	font-size:2.6em;
+  margin-bottom: 30px;
+}
+
+h2 {
+	font-size:1.8em;
+  // margin-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+a, a:active, a:visited, a:hover {
+	color:$blue;
+	text-decoration:none;
+  font-weight: 700;
+}
+
+a:hover {
+  color:$blueDark;
+	text-decoration:none;
+}
+
+.textcenter {
+	text-align:center;
+}
+
+
+pre {
+	font-size:1em;
+}

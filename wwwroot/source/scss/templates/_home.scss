@@ -1,0 +1,10 @@
+p.blurb {
+  font-size: 2.2em;
+  line-height: 1.3em;
+  padding:100px;
+  max-width:860px;
+  a {
+    color:white;
+    &:hover {border-bottom:3px solid white;}
+  }
+}
