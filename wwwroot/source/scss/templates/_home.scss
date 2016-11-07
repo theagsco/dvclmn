@@ -1,10 +1,27 @@
-p.blurb {
-  font-size: 2.2em;
-  line-height: 1.3em;
+#container {
+  position: relative;
   padding:100px;
   max-width:860px;
-  a {
-    color:white;
-    &:hover {border-bottom:3px solid white;}
+  bottom:0;
+
+  p.blurb {
+    position: relative;
+    font-size: 2.2em;
+    line-height: 1.3em;
+    z-index: 2;
+    a {
+      color:white;
+      &:hover {border-bottom:3px solid white;}
+    }
+  }
+  a#sun {
+    position: fixed;
+    display: block;
+    background: url("/public/assets/img/sun.svg");
+    width:80px;
+    height:80px;
+    bottom:100px;
+    z-index: 1;
+    &:hover {background: url("/public/assets/img/sun-hover.svg");}
   }
 }

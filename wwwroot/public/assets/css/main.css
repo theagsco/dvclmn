@@ -307,12 +307,27 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%; }
 
-p.blurb {
-  font-size: 2.2em;
-  line-height: 1.3em;
+#container {
+  position: relative;
   padding: 100px;
-  max-width: 860px; }
-  p.blurb a {
-    color: white; }
-    p.blurb a:hover {
-      border-bottom: 3px solid white; }
+  max-width: 860px;
+  bottom: 0; }
+  #container p.blurb {
+    position: relative;
+    font-size: 2.2em;
+    line-height: 1.3em;
+    z-index: 2; }
+    #container p.blurb a {
+      color: white; }
+      #container p.blurb a:hover {
+        border-bottom: 3px solid white; }
+  #container a#sun {
+    position: fixed;
+    display: block;
+    background: url("/public/assets/img/sun.svg");
+    width: 80px;
+    height: 80px;
+    bottom: 100px;
+    z-index: 1; }
+    #container a#sun:hover {
+      background: url("/public/assets/img/sun-hover.svg"); }
